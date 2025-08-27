@@ -1,0 +1,20 @@
+[package]
+name = "client"
+version = "0.0.1"
+edition = "2021"
+
+#[profile.dev]
+#opt-level = 1 
+
+[dependencies]
+log = "0.4"
+env_logger = "0.11.3"
+spacetimedb-sdk = "0.10.0"
+hex = "0.4"
+bevy = { version = "0.14.1" }
+
+leafwing-input-manager = "0.14"
+futures-channel = "0.3.30"
+bevy_third_person_camera = "0.1.11"
+bevy_rapier3d = { version = "0.27", features = ["simd-stable", "debug-render-3d"] }
+bevy_asset_loader = "0.21"
